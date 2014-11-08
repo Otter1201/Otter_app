@@ -1,8 +1,18 @@
 <h1>User Login</h1>
+
+<!--Failed-->
+<!--
 <form action="hi" method = "get" accept-charset="utf-8">
   <p>
     Your Name:<input type="text" name="user"><br />
     <input type="submit" value="SayHello">
   </p>
 </form>
+-->
+
+<!--Answer-->
+<%= form_tag :action => 'hi' do %> 
+  <%= text_field_tag 'user' %> 
+  <%= submit_tag 'confirm' %> 
+<% end %>
 
